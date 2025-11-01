@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Search</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-slate-900 flex flex-col items-center font-extrabold px-4 py-12 text-white"
+    >
+      <div class="w-full max-w-2xl">
+        <h1 class="text-2xl sm:text-3xl text-center mb-8 tracking-wide">
+          Search User Info
+        </h1>
+
+        <div class="relative mb-6">
+          <input
+            type="text"
+            onkeyup="on()"
+            id="searchInput"
+            placeholder="Search..."
+            class="w-full bg-slate-800 border border-slate-600 text-white rounded-xl px-5 py-3 pr-12 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-300 placeholder-slate-400"
+          />
+        </div>
+
+          <!-- Responsive Table -->
+      <div class="overflow-x-auto rounded-lg shadow-lg border border-slate-700">
+          <table class="min-w-full text-sm text-left border-collapse rounded overflow-hidden shadow-md">
+    <thead class="bg-slate-800 text-slate-300 uppercase text-xs">
+      <tr>
+        <th class="px-6 py-3">Name</th>
+        <th class="px-6 py-3">Email</th>
+        <th class="px-6 py-3">Country</th>
+        <th class="px-6 py-3">Age</th>
+        <th class="px-6 py-3">Occupation</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody" class="divide-y divide-slate-700">
+      <tr>
+        <td class="px-6 py-4">Adele</td>
+        <td class="px-6 py-4">adele@example.com</td>
+        <td class="px-6 py-4">UK</td>
+        <td class="px-6 py-4">32</td>
+        <td class="px-6 py-4">Singer</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4">Agnes</td>
+        <td class="px-6 py-4">agnes@example.com</td>
+        <td class="px-6 py-4">Sweden</td>
+        <td class="px-6 py-4">29</td>
+        <td class="px-6 py-4">Engineer</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4">Billy</td>
+        <td class="px-6 py-4">billy@example.com</td>
+        <td class="px-6 py-4">USA</td>
+        <td class="px-6 py-4">24</td>
+        <td class="px-6 py-4">Designer</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4">Christina</td>
+        <td class="px-6 py-4">christina@example.com</td>
+        <td class="px-6 py-4">Canada</td>
+        <td class="px-6 py-4">36</td>
+        <td class="px-6 py-4">Developer</td>
+      </tr>
+      <tr>
+        <td class="px-6 py-4">Cindy</td>
+        <td class="px-6 py-4">cindy@example.com</td>
+        <td class="px-6 py-4">Germany</td>
+        <td class="px-6 py-4">28</td>
+        <td class="px-6 py-4">Doctor</td>
+      </tr>
+    </tbody>
+  </table>
+      </div>
+    </div>      </div>
+    </div>
+  </body>
+</html>
